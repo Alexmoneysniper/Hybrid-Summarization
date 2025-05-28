@@ -1,0 +1,12 @@
+dataset:
+  name: cnn_dailymail
+  version: '3.0.0'
+model:
+  abstractive_model: facebook/bart-base
+  extractor_hidden: 256
+  extractor_layers: 2
+training:
+  epochs: 3
+  batch_size: 8
+  lr: !!float 3e-5
+  save_dir: checkpoints/
